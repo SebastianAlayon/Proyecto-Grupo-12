@@ -34,36 +34,41 @@
             </div>
         </div>
     </div>
-    <div class="container text-center">
+    <div class="container">
         <h1 class="text-center my-5" >Registrate</h1>
         <div class="row justify-content-center">
             <div class="col-md-6">
                 <form action="/signIn" method="POST">
                     <!-- <input type="hidden" name="_csrf" value="{{csrfToken}}"/> -->
+                    <label for="exampleFormControlInput1" class="form-label">Nombres</label>
                     <input
                         type="text"
                         name="user_name"
                         class="form-control mb-2"
                         placeholder="Nombres"
                     >
+                    <label for="exampleFormControlInput1" class="form-label">Email</label>
                     <input
                         type="text"
                         name="user_email"
                         class="form-control mb-2"
                         placeholder="bluuwebb@test.com"
                     >
+                    <label for="exampleFormControlInput1" class="form-label">Direccion</label>
                     <input
                         type="text"
                         name="user_addres"
                         class="form-control mb-2"
                         placeholder="Av providencia #1612 Torre Atrio"
                     >
+                    <label for="exampleFormControlInput1" class="form-label">Contraseña</label>
                     <input
                         type="password"
                         name="user_password"
                         class="form-control mb-2"
                         placeholder="contraseña"
                     >
+                    <label for="exampleFormControlInput1" class="form-label">Repita la contraseña</label>
                     <input
                         type="password"
                         name="user_rePassword"
