@@ -1,0 +1,51 @@
+/*imports*/
+@import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&display=swap');
+/*Home*/
+      /*header*/
+       .boton{
+          text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+          text-align:center;
+          text-decoration: none;
+          font-family: 'Abyssinica SIL', serif;
+          display:inline-block;
+          color: #030303;
+          background: #7F8C8D;
+          padding: 7px 20px;
+          white-space: nowrap;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          border-radius: 100px;
+          margin: 10px 5px;
+          -webkit-transition: all 0.2s ease-in-out;
+          -ms-transition: all 0.2s ease-in-out;
+          -moz-transition: all 0.2s ease-in-out;
+          -o-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;
+        }
+ 
+        .amarillo{
+background: #D8DB34;
+box-shadow: 0px 5px 0px 0px #B5B929;
+         }
+
+        .amarillo:hover{
+background: #E0E539;
+        }
+
+        .amarillo:active{
+box-shadow: 0px 2px 0px 0px #B0B929;
+        }
+
+        .rojo{
+background: #E74C3C;
+box-shadow: 0px 5px 0px 0px #C0392B;
+        }
+
+        .rojo:hover{
+background: #ff5242;
+        }
+
+        .rojo:active{
+box-shadow: 0px 2px 0px 0px #C0392B;
+        }
+        
