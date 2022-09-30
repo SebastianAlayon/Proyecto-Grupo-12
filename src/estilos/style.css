@@ -160,4 +160,20 @@ box-shadow: 0px 2px 0px 0px #C0392B;
             ;
         transform-style: preserve-3d;
     }
-    
+    .bocadillo-cuadrado {
+        position: relative;
+        height: 50px;
+        width: 150px;
+        background: red;
+        box-shadow: 1px 12px 33px rgba(0, 0, 0, 0.5);
+    }
+    .bocadillo-cuadrado:before {
+        border: 25px solid red;
+        content: '';
+        border-left-color: transparent;
+        border-bottom-color: transparent;
+        border-right-color: transparent;
+        position: absolute;
+        bottom: -48px;
+        left: calc(50% - 25px)
+    }
