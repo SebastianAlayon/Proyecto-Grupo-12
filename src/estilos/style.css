@@ -106,8 +106,6 @@ box-shadow: 0px 2px 0px 0px #C0392B;
         
     }
     .elementos img{
-        height: 100%;
-        width: 100%;
         object-fit: cover;
         -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0005);
         position: absolute;
@@ -153,13 +151,13 @@ box-shadow: 0px 2px 0px 0px #C0392B;
             transform: rotateY(-360deg) ;
         }
     }
-    .imagenes{
+   /* .imagenes{
         height: 200px;
         width: 150px;
         transition: 2s
             ;
         transform-style: preserve-3d;
-    }
+    }*/
     .bocadillo-cuadrado {
         position: relative;
         height: 50px;
@@ -459,7 +457,7 @@ section{
 }
 
 .container-1 .card .face.face1 .content img{
-    max-width: 100px;
+    max-width: 300px;
 }
 
 .container-1 .card .face.face1 .content h3{
