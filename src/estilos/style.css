@@ -607,3 +607,14 @@ section{
     color: #FBFCFC ; 
     text-align: center;
 }
+.navbar-toggler{
+    margin-left: 10px;
+}
+.imagenmenu{
+    margin-right: auto;
+    display: block;
+    margin-left: 10px;
+}
+.navbar-brand{
+    text-align: center;
+}
