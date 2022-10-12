@@ -416,7 +416,8 @@ section{
     width: 1000px;
     display: flex;
     justify-content:center;
-    margin-left: 320px;
+    margin-left: 210px;
+    margin-top: 110px;
 
 }
 
@@ -614,7 +615,3 @@ section{
     margin-right: auto;
     display: block;
     margin-left: 10px;
-}
-.navbar-brand{
-    text-align: center;
-}
