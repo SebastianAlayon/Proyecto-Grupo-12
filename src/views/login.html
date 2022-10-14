@@ -1,8 +1,9 @@
+<!-- Define que el documento esta bajo el estandar de HTML 5 -->
 <!doctype html>
 <html lang="es">
     <head>   
         <meta charset="utf-8">
-        <title>Registrarme</title>    
+        <title> Inicio sesion </title>    
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Ejemplo de formulario de acceso basado en HTML5 y CSS">
         <meta name="keywords" content="login,formulariode acceso html">
@@ -16,29 +17,13 @@
                 <div id="login">
                     <form action="/signIn" method="POST">
                         <!-- <input type="hidden" name="_csrf" value="{{csrfToken}}"/> -->
-                        <label for="exampleFormControlInput1" class="form-label">Nombres</label>
-                        <br>
-                        <input
-                            type="text"
-                            name="user_name"
-                            class="form-control mb-2"
-                            placeholder="Nombres"
-                        >
                         <label for="exampleFormControlInput1" class="form-label">Email</label>
                         <br>
                         <input
                             type="text"
                             name="user_email"
                             class="form-control mb-2"
-                            placeholder="bluuwebb@test.com"
-                        >
-                        <label for="exampleFormControlInput1" class="form-label">Direccion</label>
-                        <br>
-                        <input
-                            type="text"
-                            name="user_addres"
-                            class="form-control mb-2"
-                            placeholder="Av providencia #1612 Torre Atrio"
+                            placeholder="bluuwebb@gmail.com"
                         >
                         <label for="exampleFormControlInput1" class="form-label">Contraseña</label>
                         <br>
@@ -46,18 +31,9 @@
                             type="password"
                             name="user_password"
                             class="form-control mb-2"
-                            placeholder="contraseña"
+                            placeholder="Contraseña"
                         >
-                        <label for="exampleFormControlInput1" class="form-label">Repita la contraseña</label>
-                        <br>
-                        <input
-                            type="password"
-                            name="user_rePassword"
-                            class="form-control mb-2"
-                            placeholder="repita la contraseña"
-                        >
-                        <button type="submit" class="btn btn-primary w-100">Registrarme</button>
-                        <br>
+                        <button type="submit" class="btn btn-primary w-100" >Iniciar sesión</button>
                     </form>
                     </div>
                 <div id="derecho">
@@ -66,10 +42,7 @@
                     </div>
                     <hr>
                     <div class="pie-form">
-                        <a>¿Necesitas alquilar herramientas para tu empresa, hogar?</a>
-                        <a >Con TOOLSITE tienes acceso a las herramientas que necesitas.</a>
-                        <hr>
-                        <a href="login.html">Iniciar sesion</a>
+                        <a href="registro.html">¿No tienes Cuenta? Registrate</a>
                         <hr>
                     </div>
                 </div>
@@ -77,4 +50,3 @@
         </div>      
     </body>
 </html>
-
