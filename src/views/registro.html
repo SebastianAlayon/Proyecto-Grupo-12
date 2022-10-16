@@ -8,43 +8,47 @@
         <meta name="keywords" content="login,formulariode acceso html">
         <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet"> 
         <!-- Link hacia el archivo de estilos css -->
-        <link rel="stylesheet" href="../estilos/login.css">       
+        <link rel="stylesheet" href="../estilos/login.css">  
+        <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>     
     </head>  
     <body>
         <div id="contenedor">  
             <div id="contenedorcentrado">
                 <div id="login">
                     <form action="/signIn" method="POST">
-                        <!-- <input type="hidden" name="_csrf" value="{{csrfToken}}"/> -->
                         <label for="exampleFormControlInput1" class="form-label">Nombres</label>
                         <br>
                         <input
                             type="text"
-                            name="user_name"
+                            name="client_name"
+                            id="client_name"
                             class="form-control mb-2"
                             placeholder="Nombres"
+                        >
+                        <label for="exampleFormControlInput1" class="form-label">Edad</label>
+                        <br>
+                        <input
+                            type="number"
+                            name="client_age"
+                            id="client_age"
+                            class="form-control mb-2"
+                            placeholder="16"
                         >
                         <label for="exampleFormControlInput1" class="form-label">Email</label>
                         <br>
                         <input
                             type="text"
-                            name="user_email"
+                            name="client_email"
+                            id="client_email"
                             class="form-control mb-2"
                             placeholder="bluuwebb@test.com"
-                        >
-                        <label for="exampleFormControlInput1" class="form-label">Direccion</label>
-                        <br>
-                        <input
-                            type="text"
-                            name="user_addres"
-                            class="form-control mb-2"
-                            placeholder="Av providencia #1612 Torre Atrio"
                         >
                         <label for="exampleFormControlInput1" class="form-label">Contraseña</label>
                         <br>
                         <input
                             type="password"
-                            name="user_password"
+                            name="client_password"
+                            id="client_password"
                             class="form-control mb-2"
                             placeholder="contraseña"
                         >
@@ -52,14 +56,14 @@
                         <br>
                         <input
                             type="password"
-                            name="user_rePassword"
+                            name="client_rePassword"
                             class="form-control mb-2"
                             placeholder="repita la contraseña"
                         >
-                        <button type="submit" class="btn btn-primary w-100">Registrarme</button>
                         <br>
                     </form>
-                    </div>
+                    <button onclick="postClient();" class="btn btn-primary w-100 my-3" id="btn_action">Registrarme</button>
+                </div>
                 <div id="derecho">
                     <div class="titulo">
                         Bienvenidos a TOOLSITE
@@ -76,5 +80,6 @@
             </div>
         </div>      
     </body>
+    <script src="../controllers/registro.js"></script>
 </html>
 
